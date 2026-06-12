@@ -3,7 +3,7 @@ import { clipPath } from "framer-motion/client";
 import NavBar from "../components/NavBar";
 import OpeningSVG from "../components/OpeningSVG";
 import TextAnimation from "../components/TextAnimation";
-import { motion, cubicBezier } from "motion/react";
+import { motion, cubicBezier } from "framer-motion";
 
 const page = () => {
   return (

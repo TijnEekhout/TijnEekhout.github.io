@@ -6,7 +6,7 @@ import {
   animate,
   useMotionTemplate,
   cubicBezier,
-} from "motion/react";
+} from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function OpeningSVG() {

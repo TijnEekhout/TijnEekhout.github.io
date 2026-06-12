@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useTransitionRouter } from "next-view-transitions";
 import { usePathname } from "next/navigation";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import TextAnimation from "./TextAnimation";
 
 export default function NavBar() {

@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "../components/NavBar";
 import OpeningSVG from "../components/OpeningSVG";
-import { motion, cubicBezier } from "motion/react"
+import { motion, cubicBezier } from "framer-motion"
 
 
 const page = () => {
