@@ -21,7 +21,7 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden"><LenisProvider>{children}</LenisProvider></body>
+      <body className="min-h-full flex flex-col overflow-hidden"><LenisProvider>{children}</LenisProvider></body>
     </html>
     </ViewTransitions>
   );
