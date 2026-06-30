@@ -4,9 +4,12 @@ import { useTransitionRouter } from "next-view-transitions";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import TextAnimation from "./TextAnimation";
+import { useAnimDone } from "../providers/ContextProvider";
 
 export default function NavBar() {
   const router = useTransitionRouter();
+
+  const { done } = useAnimDone();
 
   const pathname = usePathname();
   const routes = [
@@ -26,17 +29,20 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className=" z-11 p-6">
+      {done && (
+        
+      <nav className=" z-11 p-6 isolate"
+      >
         <ul className="flex">
-          <motion.div className="backdrop-blur-md flex gap-8 p-3 rounded-xl">
-          {routes.map((route, i) => (
-            <li key={route.label}>
-              <motion.div
-                className="relative inline-block"
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-              >
+          <motion.div className="flex gap-8 p-3 rounded-xl">
+            {routes.map((route, i) => (
+              <li key={route.label}>
+                <motion.div
+                  className="relative inline-block"
+                  initial="rest"
+                  whileHover="hover"
+                  animate="rest"
+                >
                   <Link
                     href={route.url}
                     className="relative z-10 inline-block text-white text-xl font-bold"
@@ -47,32 +53,31 @@ export default function NavBar() {
                         onTransitionReady: pageAnimation,
                       });
                     }}
-                    >
-
-                    <TextAnimation delay={i}>
-                    {route.label}
-                </TextAnimation>
+                  >
+                    <TextAnimation delay={i + 1}>{route.label}</TextAnimation>
                   </Link>
-                <motion.span
-                  className="absolute left-0 w-full -bottom-1 h-0.5 bg-white font-bold"
-                  variants={{
-                    rest: { scaleX: 0, transformOrigin: "right" },
-                    hover: { scaleX: 1, transformOrigin: "left" },
-                  }}
-                  transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
+                  <motion.span
+                    className="absolute left-0 w-full -bottom-1 h-0.5 bg-white font-bold"
+                    variants={{
+                      rest: { scaleX: 0, transformOrigin: "right" },
+                      hover: { scaleX: 1, transformOrigin: "left" },
+                    }}
+                    transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
                   />
-                  </motion.div>
-            </li>
-          ))}
+                </motion.div>
+              </li>
+            ))}
           </motion.div>
         </ul>
       </nav>
+      )
+      }
     </>
   );
 }
 
-
 const pageAnimation = () => {
+  
   document.documentElement.animate(
     [
       {

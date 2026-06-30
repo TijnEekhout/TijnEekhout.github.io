@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
-import NavBar from "./components/NavBar";
 import LenisProvider from "./providers/LenisProvider";
+import { ContextProvider } from "./providers/ContextProvider";
 
 
 export const metadata: Metadata = {
@@ -19,9 +19,9 @@ export default function RootLayout({
     <ViewTransitions>
     <html
       lang="en"
-      className={`h-full antialiased`}
+      className={`h-full antialiased overflow`}
     >
-      <body className="min-h-full flex flex-col overflow-hidden"><LenisProvider>{children}</LenisProvider></body>
+        <body className="min-h-full flex flex-col overflow-hidden"><LenisProvider><ContextProvider>{children}</ContextProvider></LenisProvider></body>
     </html>
     </ViewTransitions>
   );
