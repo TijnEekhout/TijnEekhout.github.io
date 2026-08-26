@@ -10,7 +10,7 @@ export default function NatlabProject() {
         viewport={{ once: true, amount: 0.5 }}
         whileHover={{ scale: 1.05 }}
 
-        className="w-80 h-142 bg-green-600 relative overflow-hidden"
+        className="relative aspect-[4/7] w-[min(80vw,20rem)] overflow-hidden bg-green-600"
       >
         <motion.div initial="rest" animate="rest" whileHover="hover">
           <motion.h1
@@ -20,7 +20,7 @@ export default function NatlabProject() {
           >
             Visit Project
           </motion.h1>
-          <img src="/images/NatlabImage.jpg" alt=""></img>
+          <img className="block h-auto w-full" src="/images/NatlabImage.jpg" alt="" />
         </motion.div>
       </motion.div>
     </>

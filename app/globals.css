@@ -4,7 +4,18 @@
 @theme {
   --font-dancing: "Dancing Script", cursive;
 }
-body{
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
     background-color: black;
 }
 ::view-transition-new(root) {

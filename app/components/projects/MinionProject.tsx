@@ -9,7 +9,7 @@ export default function MinionProject() {
         transition={{ duration: 1, ease: cubicBezier(0.33, 1, 0.68, 1) }}
         viewport={{ once: true, amount: 0.5 }}
         whileHover={{ scale: 1.05 }}
-        className="w-75 bg-red-500 relative overflow-hidden"
+        className="relative w-[min(78vw,18.75rem)] overflow-hidden"
       >
         <motion.div initial="rest" animate="rest" whileHover="hover">
           <motion.h1
@@ -22,7 +22,7 @@ export default function MinionProject() {
           >
             Visit Project
           </motion.h1>
-          <img src="/images/MinionProject.png" alt="" width="750" height="1500" />
+          <img className="block h-auto w-full" src="/images/MinionProject.png" alt="" width="750" height="1500" />
         </motion.div>
       </motion.div>
     </>

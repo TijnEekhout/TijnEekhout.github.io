@@ -30,9 +30,9 @@ export default function NavBar() {
   return (
     <>
       {done && (
-        <nav className=" z-11 p-6">
+        <nav className="relative z-11 p-4 sm:p-6">
           <ul className="flex justify-end">
-            <div className="absolute left-8 p-3">
+            <div className="absolute left-4 p-2 sm:left-8 sm:p-3">
               <Link
                 href="/"
                 onClick={(e) => {
@@ -47,7 +47,7 @@ export default function NavBar() {
                   initial={{ opacity: 0, y: -20, scale: 0.75 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 1.5 }}
-                  className="text-black text-xl font-extralight"
+                  className="text-[clamp(1rem,2.5vw,1.25rem)] text-black font-extralight"
                 >
                   Tijn Eekhout
                 </motion.h1>
