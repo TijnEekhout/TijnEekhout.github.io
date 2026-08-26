@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { cubicBezier } from "motion";
+import { motion, cubicBezier } from "framer-motion";
 
 export default function NatlabProject() {
   return (
