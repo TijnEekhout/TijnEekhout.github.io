@@ -15,7 +15,7 @@ export default function NavBar() {
   const routes = [
     {
       label: "Works",
-      url: "/projects",
+      url: "/work",
     },
     {
       label: "About",
@@ -33,15 +33,27 @@ export default function NavBar() {
         <nav className=" z-11 p-6">
           <ul className="flex justify-end">
             <div className="absolute left-8 p-3">
-              <motion.h1
-                initial={{ opacity: 0, y: -20, scale:0.75 }}
-                animate={{ opacity: 1, y: 0, scale:1 }}
-                transition={{duration: 1.5}}
-                className="text-black text-xl font-extralight">
-                Tijn Eekhout
-              </motion.h1>
+              <Link
+                href="/"
+                onClick={(e) => {
+                  if (pathname === "/") return;
+                  e.preventDefault();
+                  router.push("/", {
+                    onTransitionReady: pageAnimation,
+                  });
+                }}
+              >
+                <motion.h1
+                  initial={{ opacity: 0, y: -20, scale: 0.75 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 1.5 }}
+                  className="text-black text-xl font-extralight"
+                >
+                  Tijn Eekhout
+                </motion.h1>
+              </Link>
             </div>
-            <motion.div className="flex gap-8 p-3 rounded-xl">
+            {/*<motion.div className="flex gap-8 p-3 rounded-xl">
               {routes.map((route, i) => (
                 <li key={route.label}>
                   <motion.div
@@ -74,7 +86,7 @@ export default function NavBar() {
                   </motion.div>
                 </li>
               ))}
-            </motion.div>
+            </motion.div>*/}
           </ul>
         </nav>
       )}
