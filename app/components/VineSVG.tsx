@@ -32,79 +32,79 @@ export default function VineSVG() {
             strokeLinecap="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
-            transition={{ delay: 1, duration: 3, ease: "easeInOut" }}
+            transition={{ delay: 1, duration: 2, ease: "easeInOut" }}
           />
           <motion.g stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 2, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 2, duration: 2, ease: "easeInOut" }}
               d="M 285 1460 C 325 1430, 355 1395, 365 1360"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 1.5, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 1.5, duration: 2, ease: "easeInOut" }}
               d="M 90 1550 C 125 1485, 95 1460, 55 1440"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 2.5, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 2.5, duration: 2, ease: "easeInOut" }}
               d="M 345 1310 C 325 1270, 285 1240, 235 1235"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3, duration: 2, ease: "easeInOut" }}
               d="M 485 1260 C 500 1205, 535 1170, 580 1140"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3.2, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3.2, duration: 2, ease: "easeInOut" }}
               d="M 672 1245 C 625 1200, 590 1165, 550 1150"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3.4, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3.4, duration: 2, ease: "easeInOut" }}
               d="M 745 1135 C 800 1120, 835 1090, 860 1050"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3.6, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3.6, duration: 2, ease: "easeInOut" }}
               d="M 860 988 C 825 940, 800 900, 800 855"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3.7, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3.7, duration: 2, ease: "easeInOut" }}
               d="M 1000 963 C 1040 920, 1065 890, 1075 845"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3.8, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3.8, duration: 2, ease: "easeInOut" }}
               d="M 1135 835 C 1090 800, 1060 765, 1045 720"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 3.9, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 3.9, duration: 2, ease: "easeInOut" }}
               d="M 1170 700 C 1210 665, 1235 625, 1240 585"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 4, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 4, duration: 2, ease: "easeInOut" }}
               d="M 1265 558 C 1235 520, 1210 480, 1210 440"
             />
             <motion.path
               initial={{ pathLength: 0, strokeWidth: 0 }}
               animate={{ pathLength: 1, strokeWidth: 2 }}
-              transition={{ delay: 4.1, duration: 3, ease: "easeInOut" }}
+              transition={{ delay: 4.1, duration: 2, ease: "easeInOut" }}
               d="M 1340 503 C 1370 460, 1390 430, 1395 415"
             />
           </motion.g>
@@ -124,7 +124,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 4.1, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 3.1, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.5, originY: 1}}
             />
 
@@ -137,7 +137,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 4.4, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 3.4, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.1, originY: 1}}
             />
 
@@ -150,7 +150,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 5.1, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 4.1, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.8, originY: 1}}
             />
 
@@ -163,7 +163,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 5.7, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 4.7, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0, originY: 1}}
             />
 
@@ -176,7 +176,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 5.9, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 4.9, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.85, originY: 1}}
             />
 
@@ -189,7 +189,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0, originY: 1}}
             />
 
@@ -202,7 +202,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.5, originY: 1}}
             />
 
@@ -215,7 +215,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6.1, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5.1, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0, originY: 1}}
             />
 
@@ -228,7 +228,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6.2, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5.2, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.75, originY: 1}}
             />
 
@@ -241,7 +241,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6.3, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5.3, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0, originY: 1}}
             />
 
@@ -254,7 +254,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6.4, duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5.4, duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0.5, originY: 1}}
             />
 
@@ -267,7 +267,7 @@ export default function VineSVG() {
               "
               initial={{ scale: 0 }}
               animate={{ scale : 1}}
-              transition={{ delay: 6.55 , duration: 2, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
+              transition={{ delay: 5.55 , duration: 1, ease: 	cubicBezier(0.37, 0, 0.63, 1) }}
               style={{ originX: 0, originY: 1}}
             />
           </motion.g>
